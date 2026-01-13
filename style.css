@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 720px;
+    height: 420px;
+    background: rgba(15, 15, 20, 0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 80px;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding: 14px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 55px);
+}
+
+.sidebar {
+    width: 150px;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    padding: 14px;
+    color: #aaa;
+}
+
+.tab.active {
+    background: rgba(120,80,255,0.5);
+    color: white;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
